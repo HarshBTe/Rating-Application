@@ -1,0 +1,82 @@
+/* Container for the admin dashboard */
+.admin-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .admin-container h2,
+  .admin-container h3 {
+    color: #333;
+  }
+  
+  /* Logout button */
+  .logout-button {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+  }
+  
+  .logout-button:hover {
+    background: #cc0000;
+  }
+  
+  /* Form styles */
+  .store-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  .store-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Button for store creation */
+  .store-button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .store-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Store list styles */
+  .store-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .store-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .store-item:last-child {
+    border-bottom: none;
+  }
+  

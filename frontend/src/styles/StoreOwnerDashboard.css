@@ -1,0 +1,79 @@
+/* Center the dashboard content */
+.owner-dashboard {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .owner-dashboard h1 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Store name */
+  .store-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #007bff;
+  }
+  
+  /* Logout button */
+  .logout-button {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .logout-button:hover {
+    background: #cc0000;
+  }
+  
+  /* No ratings text */
+  .no-ratings {
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  /* Ratings list */
+  .ratings-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  /* Individual rating item */
+  .rating-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  /* Last item border removal */
+  .rating-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* User name */
+  .user-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Rating stars */
+  .rating-stars {
+    color: #ffcc00;
+    font-weight: bold;
+  }
+  

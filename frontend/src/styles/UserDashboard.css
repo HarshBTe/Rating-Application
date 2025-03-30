@@ -1,0 +1,80 @@
+/* Container styling */
+.user-dashboard {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .user-dashboard h2 {
+    color: #333;
+  }
+  
+  /* Logout button */
+  .logout-button {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .logout-button:hover {
+    background: #cc0000;
+  }
+  
+  /* No stores text */
+  .no-stores {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Store listing container */
+  .store-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Individual store card */
+  .store-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Store name */
+  .store-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Store address */
+  .store-address {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Store rating */
+  .store-rating {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
+  /* Style the rating number */
+  .store-rating span {
+    color: #333;
+  }
+  

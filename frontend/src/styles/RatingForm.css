@@ -1,0 +1,42 @@
+/* Rating form container */
+.rating-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Label styling */
+  .rating-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Select dropdown styling */
+  .rating-select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Submit button styling */
+  .rating-submit {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .rating-submit:hover {
+    background: #218838;
+  }
+  
