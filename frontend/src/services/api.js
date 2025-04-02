@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://rating-backend-4341.onrender.com',
 });
 
 // Add token to headers if available
