@@ -3,6 +3,8 @@ import API from '../services/api';
 import { useNavigate } from 'react-router-dom';
 import '../styles/StoreOwnerDashboard.css'; // Import external CSS file
 
+
+
 const StoreOwnerDashboard = () => {
   const [storeName, setStoreName] = useState('');
   const [ratings, setRatings] = useState([]);
@@ -30,10 +32,18 @@ const StoreOwnerDashboard = () => {
     navigate('/');
   };
 
+  const handleUpdatePassword = ()=> {
+    navigate('/update-password');
+  }
+
   return (
     <div className="owner-dashboard">
-      <h1>Store Owner Dashboard</h1>
+                  <div className='two-button-container'>
       <button className="logout-button" onClick={handleLogout}>Logout</button>
+      <button className="update-password-button" onClick={handleUpdatePassword}>Update Password</button>
+      </div>
+      <h1>Store Owner Dashboard</h1>
+
       
       <h2 className="store-name">{storeName}</h2>
 

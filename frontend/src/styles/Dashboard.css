@@ -1,0 +1,55 @@
+/* Dashboard.css */
+
+/* Page Styling */
+.dashboard-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heading */
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Stats Container (Horizontal Alignment) */
+  .dashboard-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Stat Card */
+  .stat-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px;
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  /* Stat Title */
+  .stat-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Stat Number */
+  .stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  

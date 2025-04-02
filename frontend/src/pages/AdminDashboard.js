@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import API from '../services/api';
 import { useNavigate } from 'react-router-dom';
 import '../styles/AdminDashboard.css'; // Import external CSS file
+import Dashboard from '../components/Dashboard';
+
 
 const AdminDashboard = () => {
   const [stores, setStores] = useState([]);
@@ -44,11 +46,32 @@ const AdminDashboard = () => {
     navigate('/');
   };
 
-  return (
-    <div className="admin-container">
-      <h2>Admin: Manage Stores</h2>
-      <button className="logout-button" onClick={handleLogout}>Logout</button>
+  const handleViewUsers = () => {
+    
+    navigate('/viewusers');
+  };
 
+  const handleCreateUsers = () => {
+    
+    navigate('/createusers');
+  };
+
+
+
+  return (
+    <div>
+     <button className="logout-button" onClick={handleLogout}>Logout</button>
+    <Dashboard />
+    <div className='two-buttons'>
+    
+    <button className="viewusers-button" onClick={handleViewUsers}>View Users</button>
+    <button className="createusers-button" onClick={handleCreateUsers}>Create Users</button>
+    </div>
+
+    <div className="admin-container">
+      
+      <h2>Manage Stores</h2>
+       
       <form className="store-form" onSubmit={handleCreateStore}>
         <input
           type="text"
@@ -91,6 +114,8 @@ const AdminDashboard = () => {
         ))}
       </ul>
     </div>
+    </div>
+    
   );
 };
 

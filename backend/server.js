@@ -6,6 +6,7 @@ const authRoutes = require('./src/routes/authRoutes');
 const userRoutes = require('./src/routes/userRoutes');
 const storeRoutes = require('./src/routes/storeRoutes');
 const ratingRoutes = require('./src/routes/ratingRoutes');
+const adminRoutes = require('./src/routes/adminRoutes');
 
 dotenv.config();
 const app = express();
@@ -20,6 +21,7 @@ app.use('/auth', authRoutes);
 app.use('/users', userRoutes);
 app.use('/stores', storeRoutes);
 app.use('/ratings', ratingRoutes);
+app.use('/admin', adminRoutes);
 
 // Health Check
 app.get('/', (req, res) => {

@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import API from '../services/api';
 import RatingForm from '../components/RatingForm';
 import { useNavigate } from 'react-router-dom';
-import '../styles/UserDashboard.css'; // Import external CSS file
+import '../styles/UserDashboard.css';
 
 const UserDashboard = () => {
   const [stores, setStores] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -28,16 +29,35 @@ const UserDashboard = () => {
     navigate('/');
   };
 
+  const handleUpdatePassword = ()=> {
+    navigate('/update-password');
+  }
+  const filteredStores = stores.filter(store => 
+    store.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    store.address.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="user-dashboard">
-      <h2>Store Listings</h2>
+            <div className='two-button-container'>
       <button className="logout-button" onClick={handleLogout}>Logout</button>
+      <button className="update-password-button" onClick={handleUpdatePassword}>Update Password</button>
+      </div>
+      <h2>Store Listings</h2>
 
-      {stores.length === 0 ? (
+      <input 
+        type="text" 
+        placeholder="Search by name or address..." 
+        value={searchQuery} 
+        onChange={(e) => setSearchQuery(e.target.value)} 
+        className="search-input"
+      />
+      
+      {filteredStores.length === 0 ? (
         <p className="no-stores">No stores available.</p>
       ) : (
         <div className="store-list">
-          {stores.map((store) => (
+          {filteredStores.map((store) => (
             <div key={store.id} className="store-card">
               <h3 className="store-name">{store.name}</h3>
               <p className="store-address">Address: {store.address}</p>
